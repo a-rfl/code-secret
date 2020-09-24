@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <!-- Inputs -->
+        <label for="password">Votre code secret</label>
+        <div class="d-flex block-ipt">
+            <input type="password" pattern="[0-9]" maxlength="1" name="password" autofocus />
+            <input type="password" pattern="[0-9]" maxlength="1" name="password" />
+            <input type="password" pattern="[0-9]" maxlength="1" name="password" />
+            <input type="password" pattern="[0-9]" maxlength="1" name="password" />
+            <input type="password" pattern="[0-9]" maxlength="1" name="password" />
+            <input type="password" pattern="[0-9]" maxlength="1" name="password" />
+        </div>
+
+        <!-- Clavier numérique -->
+        <!-- 
+            Pour utiliser l'attribut "accesskey" sur :
+                - Firefox: alt + shift + *accesskey value* 
+                - Chrome: alt + *accesskey value*
+        -->
+        <section class="d-flex">
+            <button type="button" name="btn0" class="btn-number" value="0" accesskey="0">0</button>
+            <button type="button" name="btn1" class="btn-number" value="1" accesskey="1">1</button>
+            <button type="button" name="btn2" class="btn-number" value="2" accesskey="2">2</button>
+            <button type="button" name="btn3" class="btn-number" value="3" accesskey="3">3</button>
+            <button type="button" name="btn4" class="btn-number" value="4" accesskey="4">4</button>
+        </section>
+        <section class="d-flex">
+            <button type="button" name="btn5" class="btn-number" value="5" accesskey="5">5</button>
+            <button type="button" name="btn6" class="btn-number" value="6" accesskey="6">6</button>
+            <button type="button" name="btn7" class="btn-number" value="7" accesskey="7">7</button>
+            <button type="button" name="btn8" class="btn-number" value="8" accesskey="8">8</button>
+            <button type="button" name="btn9" class="btn-number" value="9" accesskey="9">9</button>
+        </section>
+        <br />
+
+        <!-- Boutons de validation -->
+        <div class="block-btn d-flex">
+            <button type="reset" name="reset" class="block-btn_validation" value="Reset the form">Corriger</button>
+            <button type="submit" name="submit" class="block-btn_validation" id="btn-submit"
+                value="Submit the form">Valider</button>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+<!-- REMARQUES -->
+<!--Au départ, j'avais mis un tag fieldset (pour former le cadre autour des inputs) mais le problème était que je n'arrivais pas à modifier ses propriétés css... C'est pourquoi j'ai changé avec une div-->
+<!--J'ai un "soucis" avec le bouton de type de type reset : lorsqu'il est emploiyé, les valeurs des inputs définient aléatoirement s'effacent également et je ne sais pas vraiment comment faire pour que ça ne supprimer que les valeurs des inputs à entrer. -->
+
+</html>

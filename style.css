@@ -1,0 +1,60 @@
+/* Propriétés générales */
+form {
+  width: 50%;
+  height: 1000px;
+  margin: auto;
+}
+label {
+  margin-left: 10%;
+  font-size: 20px;
+}
+input {
+  width: 10%;
+  height: 65px;
+  border: none;
+  border-bottom: 3px solid rgb(155, 156, 163); /* gris très clair */
+  margin: 6px;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(2, 128, 144);
+}
+input:focus {
+  border-color: rgb(2, 128, 144);
+}
+button {
+  border: none;
+  border-radius: 2px;
+}
+.d-flex {
+  display: flex;
+  align-content: flex-end;
+  justify-content: center;
+}
+/* Propriétés spécifiques */
+.block-ipt {
+  width: 90%;
+  margin: 5% auto;
+  border: 2px solid rgb(155, 156, 163); /* gris très clair */
+  border-radius: 3px;
+  padding: 5px 0;
+}
+.btn-number {
+  width: 15%;
+  height: 80px;
+  background-color: rgb(2, 128, 144); /* bleu vert */
+  margin: 4px;
+  font-size: 45px;
+  color: rgb(237, 250, 253); /* bleu très clair */
+}
+.block-btn {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  justify-content: space-around;
+}
+.block-btn_validation {
+  background-color: rgb(214, 216, 224); /* gris très clair */
+  color: rgb(73, 88, 103); /* gris foncé */
+  font-size: 18px;
+  padding: 10px 35px;
+}
